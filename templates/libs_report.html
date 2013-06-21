@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+	
+	<li><img src="/static/1.png" alt='q20_plot' height="100" width="100"></img>
+	<li><img src="{{url_for('check_plot')}}" alt='no_image' ></img>
+	
+	<ul class=plots>
+		<li> <h2> {{response}} </h2>
+  	</ul>
+  	
+
+{% endblock %}
+

@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block content %}
+    
+    <br>
+    <br>
+    
+    <form action={{url_for('plot_seq_summary')}} method=post class=add-entry>
+    <dl>
+        <dt><h4>Get Sequencing Summary between Dates</h4>
+        <dt>Start Date:
+        <dd><input type=text size=20 name=startDate>
+        <dt>End Date:
+        <dd><input type=text size=20 name=endDate>
+        <dd><input type=submit value=Submit>
+     </dl>
+    </form>
+    
+    <br>
+    <br>
+    <br>
+  
+    <form action={{url_for('get_libs_summary_plots')}} method=post class=add-entry>
+    <dl>
+        <dt>Library Names:
+        <dd><textarea name=lib_names rows=5 cols=40></textarea>
+        <dd><input type=submit value=Submit>
+    </dl>
+    </form>
+   	
+    
+    
+{% endblock %}
+
